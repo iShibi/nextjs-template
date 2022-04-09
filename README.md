@@ -13,7 +13,7 @@ This is a [Next.js](https://nextjs.org/) project template that comes with:
 0. Clone this repository:
 
 ```bash
-git clone https://github.com/iShibi/react-template.git
+git clone https://github.com/iShibi/nextjs-template.git
 ```
 
 1. Install required packages:
