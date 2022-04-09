@@ -6,13 +6,13 @@ export function Counter() {
 	const { count } = useTypedSelector(state => state.counterSlice);
 
 	return (
-		<div className='flex flex-col font-mono'>
-			<div className='flex justify-center text-8xl'>{count}</div>
-			<div className='mt-4 flex justify-center space-x-2 text-4xl text-white'>
-				<button className='bg-red-600 px-5 py-2' onClick={() => dispatch(decrement())}>
+		<div className='flex flex-col'>
+			<div className='flex justify-center text-8xl font-thin'>{count}</div>
+			<div className='mt-4 flex select-none justify-center space-x-2 font-mono text-4xl text-white'>
+				<button className='rounded-md bg-red-600 px-5 py-2 shadow-md' onClick={() => dispatch(decrement())}>
 					-
 				</button>
-				<button className='bg-blue-600 px-5 py-2' onClick={() => dispatch(increment())}>
+				<button className='rounded-md bg-blue-600 px-5 py-2 shadow-md' onClick={() => dispatch(increment())}>
 					+
 				</button>
 			</div>

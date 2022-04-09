@@ -22,7 +22,7 @@ export default function Document() {
 				<meta name='twitter:image' content='// TODO: https://root-domain-name/logo.png' />
 				<meta name='twitter:card' content='summary' />
 			</Head>
-			<body>
+			<body className='bg-slate-300'>
 				<Main />
 				<NextScript />
 			</body>
