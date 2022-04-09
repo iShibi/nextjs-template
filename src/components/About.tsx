@@ -14,7 +14,7 @@ export function About() {
 		<div className='flex flex-col space-y-2 text-center'>
 			<p className='bg-blue-600 py-2 text-white'>
 				Data fetched from
-				<a href='/api/example'>
+				<a href='/api/example' target='_blank' rel='noopener noreferrer'>
 					<code>{' /api/example '}</code>
 				</a>
 				endpoint:
