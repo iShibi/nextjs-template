@@ -7,7 +7,8 @@ export function About() {
 	useEffect(() => {
 		fetch('/api/example')
 			.then(res => res.json())
-			.then(data => setExampleData(data));
+			.then(data => setExampleData(data as ExampleResponseType))
+			.catch(err => console.error(err));
 	}, []);
 
 	return exampleData ? (
