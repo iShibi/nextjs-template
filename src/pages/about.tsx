@@ -1,8 +1,7 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import { About } from '../components/About';
 
-const AboutPage: NextPage = () => {
+export default function AboutPage() {
 	return (
 		<>
 			<Head>
@@ -14,6 +13,4 @@ const AboutPage: NextPage = () => {
 			</main>
 		</>
 	);
-};
-
-export default AboutPage;
+}

@@ -11,7 +11,7 @@
 		"ecmaFeatures": {
 			"jsx": true
 		},
-		"project": ["./tsconfig.json"]
+		"project": "./tsconfig.json"
 	},
 	"rules": {
 		"@typescript-eslint/array-type": [

@@ -1,8 +1,7 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Counter } from '../components/Counter';
 
-const CounterPage: NextPage = () => {
+export default function CounterPage() {
 	return (
 		<>
 			<Head>
@@ -14,6 +13,4 @@ const CounterPage: NextPage = () => {
 			</main>
 		</>
 	);
-};
-
-export default CounterPage;
+}
