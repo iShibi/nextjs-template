@@ -1,5 +1,7 @@
+'use client';
+
 import { useEffect, useState } from 'react';
-import { type ExampleResponseType } from '../pages/api/example';
+import { type ExampleResponseType } from '../../pages/api/example';
 
 export function About() {
 	const [exampleData, setExampleData] = useState<ExampleResponseType>();

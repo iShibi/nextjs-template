@@ -1,9 +1,15 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import { type ReactNode } from 'react';
+import './global.css';
+import { Navbar } from './Navbar';
 
-export default function Document() {
+export interface RootLayoutProps {
+	children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
 	return (
-		<Html lang='en'>
-			<Head>
+		<html lang='en'>
+			<head>
 				<link rel='icon' href='/favicon.ico' />
 				<link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
 				<link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
@@ -21,11 +27,11 @@ export default function Document() {
 				<meta name='twitter:description' content='// TODO: website description' />
 				<meta name='twitter:image' content='// TODO: https://root-domain-name/logo.png' />
 				<meta name='twitter:card' content='summary' />
-			</Head>
-			<body className='bg-slate-300'>
-				<Main />
-				<NextScript />
+			</head>
+			<body>
+				<Navbar />
+				{children}
 			</body>
-		</Html>
+		</html>
 	);
 }
