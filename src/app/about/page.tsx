@@ -2,7 +2,7 @@ import { use } from 'react';
 import { type ExampleResponseType } from '../../pages/api/example';
 
 async function getData(): Promise<ExampleResponseType> {
-	const res = await fetch('http://localhost:3000/api/example');
+	const res = await fetch('https://ishibi-nextjs-template.vercel.app/api/example');
 	return res.json() as Promise<ExampleResponseType>;
 }
 
