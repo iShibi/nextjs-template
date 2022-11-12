@@ -1,7 +1,7 @@
 import { use } from 'react';
 import { type ExampleResponseType } from '../../pages/api/example';
 
-export async function getData(): Promise<ExampleResponseType> {
+async function getData(): Promise<ExampleResponseType> {
 	const res = await fetch('http://localhost:3000/api/example');
 	return res.json() as Promise<ExampleResponseType>;
 }
