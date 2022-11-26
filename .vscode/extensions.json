@@ -3,6 +3,7 @@
 		"csstools.postcss",
 		"bradlc.vscode-tailwindcss",
 		"gruntfuggly.todo-tree",
-		"esbenp.prettier-vscode"
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint"
 	]
 }
