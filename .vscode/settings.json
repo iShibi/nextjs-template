@@ -12,8 +12,8 @@
 	"eslint.alwaysShowStatus": true,
 	"eslint.validate": ["typescript"],
 	"editor.codeActionsOnSave": {
-		"source.fixAll": true,
-		"source.organizeImports": true
+		"source.fixAll": "explicit",
+		"source.organizeImports": "explicit"
 	},
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
